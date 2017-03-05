@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_RA_EVA_5_ACTIONS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aGE-Cc-A3b">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="124" width="360" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72w-yW-oUp">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9a-aQ-ISz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOn-G2-zw0">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="180" width="360" height="45"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="72w-yW-oUp" secondAttribute="trailing" constant="157" id="Akc-bM-cIw"/>
+                            <constraint firstItem="aGE-Cc-A3b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-7" id="S1K-zv-vsw"/>
+                            <constraint firstItem="aGE-Cc-A3b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="104" id="TgE-ZK-05q"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="AOn-G2-zw0" secondAttribute="leading" id="Ya4-Uz-HTk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="72w-yW-oUp" secondAttribute="bottom" constant="43" id="kj1-MV-KjG"/>
+                            <constraint firstItem="AOn-G2-zw0" firstAttribute="top" secondItem="aGE-Cc-A3b" secondAttribute="bottom" constant="26" id="uBE-md-vGo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aGE-Cc-A3b" secondAttribute="trailing" id="vyx-m0-c19"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="aGE-Cc-A3b"/>
+                                <exclude reference="72w-yW-oUp"/>
+                                <exclude reference="AOn-G2-zw0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="S1K-zv-vsw"/>
+                                <exclude reference="TgE-ZK-05q"/>
+                                <exclude reference="vyx-m0-c19"/>
+                                <exclude reference="Ya4-Uz-HTk"/>
+                                <exclude reference="uBE-md-vGo"/>
+                                <exclude reference="Akc-bM-cIw"/>
+                                <exclude reference="kj1-MV-KjG"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="aGE-Cc-A3b"/>
+                                <include reference="72w-yW-oUp"/>
+                                <include reference="AOn-G2-zw0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="S1K-zv-vsw"/>
+                                <include reference="TgE-ZK-05q"/>
+                                <include reference="vyx-m0-c19"/>
+                                <include reference="Ya4-Uz-HTk"/>
+                                <include reference="uBE-md-vGo"/>
+                                <include reference="Akc-bM-cIw"/>
+                                <include reference="kj1-MV-KjG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="AOn-G2-zw0" id="ZX7-tp-XGM"/>
+                        <outlet property="txtField1" destination="aGE-Cc-A3b" id="HGd-Pz-tgb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="343.5" y="418"/>
+        </scene>
+    </scenes>
+</document>
